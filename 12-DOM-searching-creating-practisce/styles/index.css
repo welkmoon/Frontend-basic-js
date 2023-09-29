@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #3B5998;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+h1, h2 {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 46px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* DOGS ------------------------------------------------------------ */
+
+.dog-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-desc {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.reserved {
+    background-color: #00000066;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* CATS ------------------------------------------------------------ */
+
+.cat-gallery {
+    padding: 0 20px;
+    width: 100%;
+}
+
+.cat-item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cat-item img {
+    border: 3px solid black;
+    margin-right: 20px;
+}
+
+.cat-item div {
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 12px;
+}
+
+/* STAR WARS ------------------------------------------------------------ */
+
+.sw-gallery {
+    padding: 24px;
+    width: 100%;
+}
+
+.sw-item {
+    border-radius: 20px;
+    border: 3px solid black;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.sw-item {
+    width: 100%;
+}
+
+.sw-item ul {
+    margin-left: 30px;
+}
+
+.sw-item li {
+    padding: 5px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.avatar {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
