@@ -10,22 +10,21 @@
 const PHRASE = 'Слава Україні!';
 const title = document.createElement("h1");
 const btn = document.createElement("button");
-btn.innerText="Розфарбувати";
-let titleArray= PHRASE.split("").map(elem => {
-  return`<span>${elem}</span>`
-})
+btn.innerText= "Розфарбувати";
+let titleArray = PHRASE.split("").map(elem => {
+  return `<span>${elem}</span>`
+});
 title.innerHTML=titleArray.join("");
-// btn.addEventListener("click", () =>{
+// btn.addEventListener("click", () => {
 //   for(let span of title.children){
-//     span.style.color=getRandomColor();
+//     span.style.color = getRandomColor();
 //   }
 // })
-document.body.addEventListener("mousemove", () =>{
+document.body.addEventListener("mousemove", () => {
   for(let span of title.children){
-    span.style.color=getRandomColor();
+    span.style.color = getRandomColor();
   }
 })
-
 
 document.body.append(title,btn);
 
