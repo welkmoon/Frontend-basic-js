@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.slider {
+    width: 800px;
+    height: 400px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 100px auto 30px;
+    position: relative;
+}
+
+.current-slide {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-container button {
+    padding: 10px 16px;
+    cursor: pointer;
+    user-select: none;
+}
