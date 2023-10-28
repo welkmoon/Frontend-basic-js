@@ -6,19 +6,19 @@
  *
  */
 
-const blockOne = document.getElementById('block-1');
-const blockTwo = document.getElementById('block-2');
+const blokOne = document.getElementById("block-1");
+const blokTwo = document.getElementById("block-2");
 
-blockOne.addEventListener('mouseover', ()=> {
-    blockTwo.style.backgroundColor='green';
+blokOne.addEventListener('mouseover', ()=>{
+    blokTwo.style.backgroundColor="green";
 })
-blockOne.addEventListener('mouseout', ()=> {
-    blockTwo.style.backgroundColor='';
+blokOne.addEventListener('mouseout', ()=>{
+    blokTwo.style.backgroundColor="";
 })
 
-blockTwo.addEventListener('mouseover', ()=> {
-    blockOne.style.backgroundColor='red';
+blokTwo.addEventListener('mouseover', ()=>{
+    blokOne.style.backgroundColor="red";
 })
-blockTwo.addEventListener('mouseout', ()=> {
-    blockOne.style.backgroundColor='';
+blokTwo.addEventListener('mouseout', ()=>{
+    blokOne.style.backgroundColor="";
 })

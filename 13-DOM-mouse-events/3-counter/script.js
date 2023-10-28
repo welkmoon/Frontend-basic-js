@@ -5,7 +5,8 @@
  */
 
 const btn = document.querySelector('button');
+// console.log(btn);
 
-btn.addEventListener('click', (event)=> {
+btn.addEventListener('click', (event)=>{
     ++event.target.innerText;
 })
