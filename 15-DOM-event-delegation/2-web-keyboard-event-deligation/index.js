@@ -31,18 +31,17 @@ paintKeyboard();
 
 const keyboardsContainers = document.querySelector('.keyboard-container');
 const text = document.getElementById('text');
+const deleteBtn = document.querySelector('.del-btn')
 
 keyboardsContainers.addEventListener('click', (e) => {
-
-	if (e.target === e.currentTarget) {
+	if (e.target === e.currentTarget){
 		return;
 	}
-
-	if (e.target.className.includes('key') || e.target.parentNode.className.includes('key')) {
-		console.log(e.target);
+	if (e.target.className.includes('key') || e.target.closest('.key').className.includes('key')){
 		text.value += e.target.textContent;
-		console.log(text);
 	}
+})
 
-
+deleteBtn.addEventListener('click', (e) => {
+	text.value = ''
 })
