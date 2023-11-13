@@ -41,25 +41,72 @@ const facts = {
 3. Імітувати завантаження фактів з сервера - по кліку спочатку показувати прелоадер 2 секунди, а потім відмальовувати картки
 4. Коли будуть відмальовані всі факти - прибрати з екрану кнопку.
 */
-
-const btn = document.querySelector('.btn');
-const load = document.querySelector('#preloader');
 let quantity = 3;
 const postContainer = document.querySelector('.post-container');
-const factsHTML = facts.data.map(el => `<p class="post">${el.fact}</p>`);
-postContainer.insertAdjacentHTML('beforeend', factsHTML.slice(0, quantity).join(''));
+const factsHTML = facts.data.map(el => `<p class="post">${el.fact}<p>`);
+postContainer.insertAdjacentHTML('beforeend', factsHTML.slice(0, quantity).join(""));
+const btn = document.querySelector('.btn');
+const load = document.querySelector('#preloader')
 
-btn.addEventListener('click', () => {
-  load.classList.toggle('active')
+btn.addEventListener('click', ()=>{
+  load.classList.toggle('active');
   btn.style.display = 'none';
-
-  setTimeout(() => {
-    load.classList.toggle('active')
-    btn.style.display = 'block';
-    postContainer.insertAdjacentHTML('beforeend', factsHTML.slice(quantity, quantity + 3).join(''));
-    quantity += 3;
-    if (facts.data.length <= quantity) {
-      btn.style.display = 'none';
-    }
-  }, 2000)
+  setTimeout(()=>{
+  load.classList.toggle('active');
+  btn.style.display = 'block';
+  postContainer.insertAdjacentHTML('beforeend', factsHTML.slice(quantity, quantity + 3).join(""));
+  quantity += 3;
+  if(facts.data.length <= quantity){
+    btn.style.display = 'none';
+  }
+  },2000)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const btn = document.querySelector('.btn');
+// const load = document.querySelector('#preloader');
+// let quantity = 3;
+// const postContainer = document.querySelector('.post-container');
+// const factsHTML = facts.data.map(el => `<p class="post">${el.fact}</p>`);
+// postContainer.insertAdjacentHTML('beforeend', factsHTML.slice(0, quantity).join(''));
+
+// btn.addEventListener('click', () => {
+//   load.classList.toggle('active')
+//   btn.style.display = 'none';
+
+//   setTimeout(() => {
+//     load.classList.toggle('active')
+//     btn.style.display = 'block';
+//     postContainer.insertAdjacentHTML('beforeend', factsHTML.slice(quantity, quantity + 3).join(''));
+//     quantity += 3;
+//     if (facts.data.length <= quantity) {
+//       btn.style.display = 'none';
+//     }
+//   }, 2000)
+// })
