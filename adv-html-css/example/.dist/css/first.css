@@ -1,0 +1,9 @@
+.header {
+  background-color: aqua;
+}
+.header p {
+  color: red;
+}
+.header p:hover {
+  color: white;
+}

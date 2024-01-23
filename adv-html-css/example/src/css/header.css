@@ -1,0 +1,29 @@
+header {
+    width: 100%;
+    height: 80px;
+    background: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header li {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+header .avatar {
+    border-radius: 50%;
+    background: #fff;
+    width: 50px;
+    aspect-ratio: 1;
+}
