@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>HM13</title>
+		<style>
+			*,
+			*::after,
+			*::before {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			.container {
+				margin-top: 20px;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				align-items: center;
+			}
+			.list {
+				list-style: none;
+			}
+			.image {
+				display: block;
+				width: 400px;
+				height: 400px;
+			}
+			.images--list {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				position: relative;
+				width: 400px;
+				height: 400px;
+			}
+			.images--item {
+				position: absolute;
+				width: 400px;
+				height: 400px;
+				opacity: 0;
+				transition: opacity 500ms;
+			}
+			.images--item[data-active='true'] {
+				opacity: 1;
+			}
+			.buttons--wrapper {
+				display: flex;
+				gap: 10px;
+			}
+			.buttons--wrapper button {
+				padding: 5px 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="container">
+			<div class="timer">00:03:00</div>
+			<ul class="list images--list">
+				<li class="images--item">
+					<img
+						draggable="false"
+						src="./img/1.jpg"
+						alt="image of a game"
+						class="image" />
+				</li>
+				<li class="images--item">
+					<img
+						draggable="false"
+						src="./img/2.jpg"
+						alt="image of a game"
+						class="image" />
+				</li>
+				<li class="images--item">
+					<img
+						draggable="false"
+						src="./img/3.JPG"
+						alt="image of a game"
+						class="image" />
+				</li>
+				<li class="images--item">
+					<img
+						draggable="false"
+						src="./img/4.png"
+						alt="image of a game"
+						class="image" />
+				</li>
+			</ul>
+			<div class="buttons--wrapper"></div>
+		</section>
+		<script src="./scripts/app.js"></script>
+	</body>
+</html>
